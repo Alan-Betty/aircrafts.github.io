@@ -1,0 +1,133 @@
+
+:root {
+    --bg1: #151515;
+    --bg2: #222222;
+    --bg3: #393939;
+    --tx1: #ffffff;
+    --tx2: #e9e9e9;
+    --mc: #00bcd4;
+    --sc: #e8b923;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg2);
+    color: var(--tx2);
+}
+
+header {
+    color: var(--sc);
+    font-weight: 900;
+    height: 100vh;  /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1.5em;
+    background-image: url("/Images/82140.jpg");
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; /* Position to contain the pseudo-element */
+}
+
+/* Adding overlay with pseudo-element */
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    z-index: 10; /* Ensures the overlay is below the text */
+}
+
+/* Sticky navbar */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg3);
+    padding: 1em 0;
+    position: sticky;  /* Sticks when scrolling */
+    top: 0;  /* Sticks to the top */
+    z-index: 1000;  /* Ensures it stays above other elements */
+}
+
+nav a {
+    color: var(--tx1);
+    padding: 0.8em 1.5em;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: var(--sc);
+}
+
+section {
+    padding: 4em 2em;
+    text-align: center;
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    margin-top: 1em;
+}
+
+.card {
+    background-color: var(--bg2);
+    border: 1px solid var(--bg3);
+    border-radius: 10px;
+    padding: 1em;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+/* Optional: Adjust footer to avoid overlap */
+footer {
+    background-color: var(--bg3);
+    color: var(--tx1);
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+}
+
+.shadow {
+    position: sticky;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    z-index: 10;
+    transition: opacity 0.3s ease;  /* Smooth fade transition */
+}
+
+.shadow.hidden {
+    opacity: 0;   /* Make it invisible */
+    pointer-events: none;  /* Ignore mouse events when hidden */
+}
+
+
+.shadow h1{
+    font-size: 45px;
+}
