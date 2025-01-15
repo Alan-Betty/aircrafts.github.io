@@ -26,7 +26,7 @@ header {
     align-items: center;
     text-align: center;
     padding: 1.5em;
-    background-image: url("/Images/82140.jpg");
+    background-image: url("./Images/82140.jpg");
     min-height: 500px; 
     background-attachment: fixed;
     background-position: center;
