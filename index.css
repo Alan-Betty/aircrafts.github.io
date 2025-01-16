@@ -66,13 +66,13 @@ header::before {
     padding: 1em 0;
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 250vh;
     z-index: 1000;
     background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 90%);
     transition: background 0.5s cubic-bezier(0.4, 0.0, 0.2, 1),
         box-shadow 0.5s cubic-bezier(0.4, 0.0, 0.2, 1),
         padding 0.5s cubic-bezier(0.4, 0.0, 0.2, 1);
-    transform: translateX(-7.5%);
+    transform: translateX(-4.5%);
 }
 
 #main-nav a {
@@ -159,7 +159,7 @@ footer {
 
 
 #intro h2,
-p {
+#intro p {
     font-family: "jura", serif;
 }
 
@@ -179,7 +179,15 @@ p {
     filter: brightness(0) invert(1);
     height: 25px;
     width: 200px;
-    transform: translateX(-150%);
+   
+}
+
+.logo{
+    transform: translateX(-140%);
+}
+
+#main-nav .logo:hover{
+    background: transparent;
 }
 
 .shadow-img {
@@ -189,4 +197,8 @@ p {
     transform: scale(1.5);
     padding: 1px;
     padding-left: 35px;
+}
+
+.shadow p{
+    margin-left: 45px;
 }
