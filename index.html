@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>American Aircraft Showcase</title>
+
+    <link
+      rel="stylesheet"
+      href="/css/app-wa-4605c815f1874757bc9ac33aa114fb0f.css?vsn=d"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-thin.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-regular.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-light.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-thin.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-regular.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-light.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone-thin.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone-regular.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone-light.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <!-- todo list -->
+  <!--! make newsletter -->
+  <!--! database and functionality of contact -->
+  <!--! about us page -->
+  <!--! make a memorial for retired and destroyed Aircrafts -->
+  <!--! buy a domain  -->
+
+  <body>
+    <header class="header">
+      <video autoplay muted loop playsinline class="header-video">
+        <source src="./Images/fighter.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="shadow">
+        <h1>
+          Welcome To
+          <img
+            class="shadow-img"
+            src="./Images/AeroSpace.png"
+            alt="AeroSpace"
+          />
+        </h1>
+        <p>Your journey into the skies of Aircrafts and innovation.</p>
+      </div>
+
+      <nav id="main-nav" class="initial-nav">
+        <a class="logo" href="#intro"
+          ><img class="logo-img" src="./Images/AeroSpace.png" alt="Aerospace"
+        /></a>
+        <a href="#intro">Introduction</a>
+        <a href="#aircraft">Aircraft Gallery</a>
+        <a href="#memorial">Memorial</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact Us</a>
+      </nav>
+    </header>
+
+    <div class="scroll-arrow">
+      <a href="#intro"><i class="fa-regular fa-chevrons-down"></i></a>
+    </div>
+
+    <section id="intro" class="">
+      <!--! this hidden hides the section -->
+      <div class="intro-container">
+        <h2 id="heading"></h2>
+        <p id="paragraph" class="typewriter"></p>
+        <button
+          id="cta-button"
+          class="cta-button"
+          style="display: none"
+          onclick="document.querySelector('#aircraft').scrollIntoView({behavior: 'smooth'})"
+        >
+          Explore Aircraft Gallery
+        </button>
+      </div>
+    </section>
+
+    <section id="aircraft" class="">
+      <h2>Aircraft Gallery</h2>
+      <div class="gallery">
+        <!-- !the gallery items are being inserted here by the javascript code -->
+      </div>
+    </section>
+
+    <section id="memorial" class="">Under Dev</section>
+
+    <section id="about" class="">Under Dev</section>
+
+    <!--! contact -->
+    <section id="contact" class="section contact">
+      <video class="background-video" autoplay loop muted>
+        <source
+          src="./Images/4k-abstract-matrix-like-3d-binary-digits-falling-bg-loop.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+      <div class="outer-contact-box">
+        <div class="contact-box">
+          <video class="background-video second" autoplay loop muted>
+            <source
+              src="./Images/4k-abstract-matrix-like-3d-binary-digits-falling-bg-loop.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+          <form id="contact-form">
+            <h2>Contact Us</h2>
+
+            <div class="input-box">
+              <span class="icon"><i class="fa-solid fa-user"></i></span>
+              <input type="text" id="name" name="name" required />
+              <label for="name">Name</label>
+            </div>
+
+            <div class="input-box">
+              <span class="icon"><i class="fa-light fa-envelope"></i></span>
+              <input type="email" id="email" name="email" required />
+              <label for="email">E-mail</label>
+            </div>
+
+            <div class="input-box">
+              <span class="icon"
+                ><i class="fa-sharp fa-light fa-lightbulb-exclamation-on"></i
+              ></span>
+              <input type="text" id="subject" name="subject" required />
+              <label for="subject">Subject</label>
+            </div>
+
+            <div class="input-box">
+              <span class="icon"
+                ><i class="fa-light fa-message-lines"></i
+              ></span>
+              <input type="text" id="message" name="message" required />
+              <label for="message">Message</label>
+            </div>
+
+            <button type="submit">Send Message</button>
+            <div class="glitch" id="confirmation">Message Sent</div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- !footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="col1">
+          <a href="#intro" class="brand"
+            ><img
+              class="logo-img"
+              src="./Images/AeroSpace.png"
+              alt="Logo-AeroSpace"
+          /></a>
+          <p class="touch">Get In Touch With Me!</p>
+          <ul class="media-icons">
+            <li>
+              <a target="_blank" href="https://github.com/Alan-Betty"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.instagram.com/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.youtube.com/@alanbetty"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://discord.com/users/1229633538362703882"
+                ><i class="fa-brands fa-discord"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.reddit.com/user/Primary-Quiet-5920/"
+                ><i class="fa-brands fa-reddit"></i
+              ></a>
+            </li>
+            <li>
+              <a target="_blank" href="https://x.com/AlanPBetty"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a target="_blank" href="https://codepen.io/Alan-Betty"
+                ><i class="fa-brands fa-codepen"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col2">
+          <ul class="menu">
+            <li><a href="#">Introduction</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Memorial</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+          <p class="footer-text">
+            This is a website made by <a href="https://github.com/Alan-Betty" class="footer-text-me" >Me</a>, as i was bored and i wanted to involve the two things i love the most, which would be programming and aircrafts. 
+          </p>
+        </div>
+
+        <div class="col3">
+          <p>Subscribe To Our NewsLetter</p>
+          <form action="">
+            <div class="footer-input-wrap">
+              <input
+                type="email"
+                autocomplete="off"
+                placeholder="example@gmail.com"
+              />
+              <button type="submit">
+                <i class="fa-light fa-paper-plane"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <script src="index.js"></script>
+  <script src="gallery.js"></script>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.21.0/core.min.js"
+    integrity="sha512-fo6X5UXaTRf/mHuTYJBR3Q/rpPa+LB2KUyDMROluMkZnfEEF4DhQyI5AHRoAe/zzu1Ty58MMmZXG4SuVEpXsng=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+</html>
